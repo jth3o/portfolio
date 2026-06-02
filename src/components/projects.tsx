@@ -58,7 +58,7 @@ const projects: Project[] = [
     description:
       "Project scaffolding tool that generates a complete GitHub repository structure and boilerplate from a plain-English description.",
     stack: ["Next.js", "GitHub API"],
-    href: "https://github.com/jth3o",
+    href: "https://github.com/jth3o/TapTask",
     features: [
       {
         title: "Plain-English project description",
