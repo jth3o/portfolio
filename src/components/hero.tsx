@@ -22,26 +22,8 @@ export function Hero() {
         </div>
 
         <div
-          className="animate-fade-in-up"
+          className="animate-fade-in-up flex flex-wrap gap-3 mt-8"
           style={{ animationDelay: "200ms", animationFillMode: "both", opacity: 0 }}
-        >
-          <p className="text-xl sm:text-2xl font-medium text-neutral-700 dark:text-neutral-300 max-w-2xl leading-snug mb-4">
-            I turn messy data and complex problems into decisions that hold up under scrutiny.
-          </p>
-        </div>
-
-        <div
-          className="animate-fade-in-up"
-          style={{ animationDelay: "300ms", animationFillMode: "both", opacity: 0 }}
-        >
-          <p className="text-base text-neutral-500 dark:text-neutral-400 max-w-xl mb-12">
-            Machine learning, data science, and product — built for rigor, designed for impact.
-          </p>
-        </div>
-
-        <div
-          className="animate-fade-in-up flex flex-wrap gap-3"
-          style={{ animationDelay: "400ms", animationFillMode: "both", opacity: 0 }}
         >
           <a
             href="#projects"
