@@ -27,7 +27,7 @@ const projects: Project[] = [
   {
     title: "Point",
     description:
-      "AI-powered app that converts lecture transcripts into flashcards and quizzes you with a spaced repetition scheduler — like Anki, but built in.",
+      "AI-powered app that converts lecture transcripts into flashcards and quizzes you with a spaced repetition scheduler, like Anki, but built in.",
     stack: ["Next.js", "TypeScript", "MongoDB", "OpenAI API"],
     href: "https://github.com/jth3o/Point",
     live: "https://point-tawny.vercel.app",
@@ -38,7 +38,7 @@ const projects: Project[] = [
       },
       {
         title: "AI fact extraction",
-        detail: "OpenAI reads each transcript segment and pulls out the key facts — no manual highlighting or note-taking required.",
+        detail: "OpenAI reads each transcript segment and pulls out the key facts, no manual highlighting or note-taking required.",
       },
       {
         title: "Automatic flashcard generation",
@@ -54,19 +54,19 @@ const projects: Project[] = [
       },
       {
         title: "Course & lecture organization",
-        detail: "Group lectures into courses. Each user sees only their own data — full session-based authentication.",
+        detail: "Group lectures into courses. Each user sees only their own data, full session-based authentication.",
       },
     ],
     screenshots: [
-      { src: "/screenshots/point-01-signin.png",        caption: "Sign in with Google to get started — no account setup required." },
+      { src: "/screenshots/point-01-signin.png",        caption: "Sign in with Google to get started, no account setup required." },
       { src: "/screenshots/point-02-dashboard.png",     caption: "Create courses to organize your lectures. Each course holds as many uploads as you need." },
-      { src: "/screenshots/point-03-course.png",        caption: "Upload a .vtt transcript from any lecture recording. Point processes it automatically — here it extracted 161 facts and built 74 cards from one lecture." },
+      { src: "/screenshots/point-03-course.png",        caption: "Upload a .vtt transcript from any lecture recording. Point processes it automatically, here it extracted 161 facts and built 74 cards from one lecture." },
       { src: "/screenshots/point-04-cards.png",         caption: "Every card is generated from a specific fact in the transcript, tagged by topic and difficulty so you can see exactly where it came from." },
-      { src: "/screenshots/point-05-study-picker.png",  caption: "The study page shows how many cards are due in each course — the scheduler spaces reviews so you're always working on what you're most likely to forget." },
-      { src: "/screenshots/point-06-card-front.png",    caption: "A question appears — try to recall the answer before revealing it. Active recall is the core of how spaced repetition works." },
+      { src: "/screenshots/point-05-study-picker.png",  caption: "The study page shows how many cards are due in each course, the scheduler spaces reviews so you're always working on what you're most likely to forget." },
+      { src: "/screenshots/point-06-card-front.png",    caption: "A question appears, try to recall the answer before revealing it. Active recall is the core of how spaced repetition works." },
       { src: "/screenshots/point-07-card-revealed.png", caption: "Rate how well you knew it. Again brings it back immediately. Easy pushes it far into the future. The scheduler adjusts each card's interval based on your history." },
-      { src: "/screenshots/point-08-card-menu.png",     caption: "Stuck on a card? The menu gives you three options — get an explanation, see a worked example, or delete the card if it's not useful." },
-      { src: "/screenshots/point-09-explain.png",       caption: "Point explains the concept in depth using the context from your own lecture — not a generic definition, but one grounded in what you actually studied." },
+      { src: "/screenshots/point-08-card-menu.png",     caption: "Stuck on a card? The menu gives you three options, get an explanation, see a worked example, or delete the card if it's not useful." },
+      { src: "/screenshots/point-09-explain.png",       caption: "Point explains the concept in depth using the context from your own lecture, not a generic definition, but one grounded in what you actually studied." },
     ],
   },
   {
@@ -83,26 +83,26 @@ const projects: Project[] = [
       },
       {
         title: "Instant repo generation",
-        detail: "A fully initialized GitHub repository is created in seconds — folders, config files, and starter code included.",
+        detail: "A fully initialized GitHub repository is created in seconds, folders, config files, and starter code included.",
       },
       {
         title: "Works with any GitHub account",
-        detail: "Sign in with GitHub OAuth — TapTask creates repos directly in your own account, no sharing credentials required.",
+        detail: "Sign in with GitHub OAuth, TapTask creates repos directly in your own account, no sharing credentials required.",
       },
     ],
     screenshots: [
-      { src: "/screenshots/taptask-01-signin.png",       caption: "Sign in with GitHub — TapTask connects directly to your account to create repos and open PRs on your behalf." },
+      { src: "/screenshots/taptask-01-signin.png",       caption: "Sign in with GitHub, TapTask connects directly to your account to create repos and open PRs on your behalf." },
       { src: "/screenshots/taptask-02-build.png",        caption: "Pick any repo from your GitHub, choose a task type, and describe what you want built in plain English." },
-      { src: "/screenshots/taptask-03-ideas-list.png",   caption: "The Ideas tab tracks every project you're working on — each one has its own spec, task breakdown, and build status." },
+      { src: "/screenshots/taptask-03-ideas-list.png",   caption: "The Ideas tab tracks every project you're working on, each one has its own spec, task breakdown, and build status." },
       { src: "/screenshots/taptask-04-idea-form.png",    caption: "Define the problem, target user, MVP scope, assumptions, and success metrics. TapTask can generate any of these for you." },
       { src: "/screenshots/taptask-05-task-groups.png",  caption: "Once an idea is scoped, TapTask breaks it into task groups and individual features. Each feature becomes a GitHub issue sent to an AI agent." },
-      { src: "/screenshots/taptask-06-market-scanner.png", caption: "The Market tab scans a space you're watching and surfaces real signals — pain points, workarounds, and product gaps people are talking about." },
-      { src: "/screenshots/taptask-07-market-results.png", caption: "Each signal is scored and explained — what changed, who's affected, what the current workarounds are, and why now is the right time to build." },
-      { src: "/screenshots/taptask-08-send-task.png",    caption: "Tasks prefilled from Ideas drop straight into the build view. Pick your agent — Cursor, Codex, or Claude — and hit Send." },
+      { src: "/screenshots/taptask-06-market-scanner.png", caption: "The Market tab scans a space you're watching and surfaces real signals, pain points, workarounds, and product gaps people are talking about." },
+      { src: "/screenshots/taptask-07-market-results.png", caption: "Each signal is scored and explained, what changed, who's affected, what the current workarounds are, and why now is the right time to build." },
+      { src: "/screenshots/taptask-08-send-task.png",    caption: "Tasks prefilled from Ideas drop straight into the build view. Pick your agent, Cursor, Codex, or Claude, and hit Send." },
       { src: "/screenshots/taptask-09-cursor-running.png", caption: "The agent picks up the task, creates a branch, and starts building. TapTask polls for the PR automatically." },
       { src: "/screenshots/taptask-10-pr-opened.png",    caption: "When the agent opens a PR, TapTask shows the diff, risk level, and exact git commands to pull and test it locally." },
-      { src: "/screenshots/taptask-11-pr-ready.png",     caption: "Once you're happy, mark it ready and merge directly from TapTask — no need to go back to GitHub." },
-      { src: "/screenshots/taptask-12-merged.png",       caption: "Merged. The task is done and logged. The whole loop — idea to merged PR — without leaving the dashboard." },
+      { src: "/screenshots/taptask-11-pr-ready.png",     caption: "Once you're happy, mark it ready and merge directly from TapTask, no need to go back to GitHub." },
+      { src: "/screenshots/taptask-12-merged.png",       caption: "Merged. The task is done and logged. The whole loop, idea to merged PR, without leaving the dashboard." },
     ],
   },
   {
@@ -113,7 +113,7 @@ const projects: Project[] = [
     href: "https://github.com/jth3o",
     features: [
       {
-        title: "Clinical dataset — 121 patients, 3 diseases",
+        title: "Clinical dataset, 121 patients, 3 diseases",
         detail: "Real breath sample data from patients diagnosed with Asthma, Bronchi, or COPD. 78 volatile organic compound (VOC) intensity measurements per patient.",
       },
       {
@@ -126,11 +126,11 @@ const projects: Project[] = [
       },
       {
         title: "Confusion matrix analysis",
-        detail: "Asthma classified perfectly (53/53). The only confusion was between Bronchi and COPD — clinically expected given their overlapping pathophysiology.",
+        detail: "Asthma classified perfectly (53/53). The only confusion was between Bronchi and COPD, clinically expected given their overlapping pathophysiology.",
       },
     ],
     screenshots: [
-      { src: "/screenshots/voc-confusion-matrix.png", caption: "Confusion matrix — 96.7% mean accuracy across 5 folds" },
+      { src: "/screenshots/voc-confusion-matrix.png", caption: "Confusion matrix, 96.7% mean accuracy across 5 folds" },
     ],
   },
 ];
@@ -173,7 +173,7 @@ function CarouselModal({
         </button>
       </div>
 
-      {/* Image — fills remaining space */}
+      {/* Image, fills remaining space */}
       <div
         className="relative flex-1 flex items-center justify-center min-h-0 px-16"
         onClick={(e) => e.stopPropagation()}
@@ -313,9 +313,9 @@ export function Projects() {
                                 e.stopPropagation();
                                 setCarousel({ project, index: 0 });
                               }}
-                              className="flex items-center gap-1 text-xs text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+                              className="flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-md bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-300 transition-colors"
                             >
-                              Screenshots <Images size={12} />
+                              Demo <Images size={11} />
                             </button>
                           )}
                         </div>

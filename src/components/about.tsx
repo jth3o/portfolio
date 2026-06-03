@@ -12,7 +12,7 @@ export function About() {
           <div className="md:col-span-9">
             <p className="text-lg sm:text-xl text-neutral-700 dark:text-neutral-300 leading-relaxed mb-5">
               I study Industrial and Operations Engineering at Michigan with a minor in Data Science.
-              I spend most of my time consulting, working with startups, and building software —
+              I spend most of my time consulting, working with startups, and building software,
               usually some mix of all three.
             </p>
             <p className="text-lg sm:text-xl text-neutral-700 dark:text-neutral-300 leading-relaxed">
