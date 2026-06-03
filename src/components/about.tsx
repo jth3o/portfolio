@@ -11,24 +11,24 @@ export function About() {
 
           <div className="md:col-span-9">
             <p className="text-lg sm:text-xl text-neutral-700 dark:text-neutral-300 leading-relaxed mb-5">
-              I&apos;m a student at the University of Michigan studying{" "}
-              <span className="text-neutral-400 dark:text-neutral-500 italic">
+              I study{" "}
+              <span className="text-neutral-500 dark:text-neutral-400 italic">
                 Industrial and Operations Engineering
-              </span>
-              , with a focus on data science, machine learning, and building products powered by AI.
+              </span>{" "}
+              at the University of Michigan, with a minor in Data Science. IOE sits at the overlap
+              of math, systems thinking, and decision-making under uncertainty — which is basically
+              how I approach most things.
             </p>
             <p className="text-lg sm:text-xl text-neutral-700 dark:text-neutral-300 leading-relaxed mb-5">
-              My work lives at the intersection of rigorous quantitative analysis and practical
-              engineering — I care about building things that actually work, not just things that
-              look good in a slide deck.
+              Outside of class I consult through Iota Consulting — I&apos;ve worked on an M&A
+              analysis for a biotech acquisition, an AI infrastructure strategy, and an investment
+              thesis for a stock pitch. On the startup side, I helped LetsPark raise $10,000 from
+              Birmingham Angels and represented the company at TEDx Detroit.
             </p>
             <p className="text-lg sm:text-xl text-neutral-700 dark:text-neutral-300 leading-relaxed">
-              I&apos;m actively pursuing a{" "}
-              <span className="font-semibold text-neutral-900 dark:text-neutral-100">
-                BCG consulting internship
-              </span>{" "}
-              where I can bring structured problem-solving and technical depth to client challenges
-              that matter.
+              I also build software. I like the combination of having a real problem and being able
+              to just go build the thing — most of my projects start from something I or someone
+              around me actually needed.
             </p>
           </div>
         </div>
