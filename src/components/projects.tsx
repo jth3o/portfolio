@@ -68,6 +68,7 @@ const projects: Project[] = [
       "Project scaffolding tool that generates a complete GitHub repository structure and boilerplate from a plain-English description.",
     stack: ["Next.js", "GitHub OAuth", "AI"],
     href: "https://github.com/jth3o/TapTask",
+    live: "https://taptask.vercel.app",
     features: [
       {
         title: "Plain-English project description",
