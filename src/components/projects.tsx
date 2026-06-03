@@ -25,31 +25,49 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Portfolio Website",
+    title: "Point",
     description:
-      "This site — built from scratch with Next.js and Tailwind. Designed to be minimal, fast, and easy to update as projects evolve.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    href: "https://github.com/jth3o/portfolio",
-    live: "https://jamesandersen.com",
+      "AI-powered app that converts lecture transcripts into flashcards and quizzes you with a spaced repetition scheduler — like Anki, but built in.",
+    stack: ["Next.js", "TypeScript", "MongoDB", "OpenAI API"],
+    href: "https://github.com/jth3o/Point",
+    live: "https://point-tawny.vercel.app",
     features: [
       {
-        title: "Built from scratch",
-        detail: "No templates or site builders — written in Next.js with Tailwind CSS and deployed on Vercel.",
+        title: "Upload any .vtt transcript",
+        detail: "Drop in a .vtt file from any lecture recording. Point parses and segments it into meaningful chunks automatically.",
       },
       {
-        title: "Expandable project cards",
-        detail: "Each project card expands to show a full feature breakdown and links to the live site and GitHub repo.",
+        title: "AI fact extraction",
+        detail: "OpenAI reads each transcript segment and pulls out the key facts — no manual highlighting or note-taking required.",
       },
       {
-        title: "Screenshot carousel",
-        detail: "Full-screen screenshot viewer walks through the user experience of each project with captions.",
+        title: "Automatic flashcard generation",
+        detail: "Facts are converted into atomic front/back flashcards, structured to test one concept at a time.",
       },
       {
-        title: "Dark mode",
-        detail: "System-aware dark mode toggle built with next-themes.",
+        title: "Spaced repetition scheduler",
+        detail: "Cards resurface based on how well you know them. Rate each card Again / Hard / Good / Easy and the scheduler adjusts the next review date.",
+      },
+      {
+        title: "In-session help",
+        detail: "Stuck on a card? Ask for an explanation or a worked example mid-review without leaving the study session.",
+      },
+      {
+        title: "Course & lecture organization",
+        detail: "Group lectures into courses. Each user sees only their own data — full session-based authentication.",
       },
     ],
-    screenshots: [],
+    screenshots: [
+      { src: "/screenshots/point-01-signin.png",        caption: "Sign in with Google to get started — no account setup required." },
+      { src: "/screenshots/point-02-dashboard.png",     caption: "Create courses to organize your lectures. Each course holds as many uploads as you need." },
+      { src: "/screenshots/point-03-course.png",        caption: "Upload a .vtt transcript from any lecture recording. Point processes it automatically — here it extracted 161 facts and built 74 cards from one lecture." },
+      { src: "/screenshots/point-04-cards.png",         caption: "Every card is generated from a specific fact in the transcript, tagged by topic and difficulty so you can see exactly where it came from." },
+      { src: "/screenshots/point-05-study-picker.png",  caption: "The study page shows how many cards are due in each course — the scheduler spaces reviews so you're always working on what you're most likely to forget." },
+      { src: "/screenshots/point-06-card-front.png",    caption: "A question appears — try to recall the answer before revealing it. Active recall is the core of how spaced repetition works." },
+      { src: "/screenshots/point-07-card-revealed.png", caption: "Rate how well you knew it. Again brings it back immediately. Easy pushes it far into the future. The scheduler adjusts each card's interval based on your history." },
+      { src: "/screenshots/point-08-card-menu.png",     caption: "Stuck on a card? The menu gives you three options — get an explanation, see a worked example, or delete the card if it's not useful." },
+      { src: "/screenshots/point-09-explain.png",       caption: "Point explains the concept in depth using the context from your own lecture — not a generic definition, but one grounded in what you actually studied." },
+    ],
   },
   {
     title: "TapTask",
