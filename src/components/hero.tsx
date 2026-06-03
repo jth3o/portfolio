@@ -5,7 +5,7 @@ import { ArrowDown } from "lucide-react";
 export function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-center px-6 pt-14">
-      <div className="max-w-5xl mx-auto w-full py-24">
+      <div className="max-w-5xl mx-auto w-full py-10">
         <div className="animate-fade-in-up" style={{ animationFillMode: "both" }}>
           <p className="text-sm font-medium text-neutral-400 dark:text-neutral-500 tracking-widest uppercase mb-6">
             University of Michigan
