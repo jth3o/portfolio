@@ -148,69 +148,65 @@ function CarouselModal({
   }, [onClose, prev, next]);
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4"
-      onClick={onClose}
-    >
-      <div
-        className="relative bg-white dark:bg-neutral-900 rounded-2xl overflow-hidden shadow-2xl max-w-3xl w-full"
-        onClick={(e) => e.stopPropagation()}
-      >
-        {/* Close */}
+    <div className="fixed inset-0 z-50 flex flex-col bg-black" onClick={onClose}>
+      {/* Top bar */}
+      <div className="flex items-center justify-between px-6 py-4 flex-shrink-0" onClick={(e) => e.stopPropagation()}>
+        <span className="text-sm text-white/50">{idx + 1} / {screenshots.length}</span>
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 p-1.5 rounded-lg bg-neutral-100 dark:bg-neutral-800 text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+          className="p-2 rounded-lg text-white/60 hover:text-white hover:bg-white/10 transition-colors"
         >
-          <X size={16} />
+          <X size={20} />
         </button>
+      </div>
 
-        {/* Image */}
-        <div className="relative bg-neutral-100 dark:bg-neutral-800 aspect-video flex items-center justify-center">
-          <img
-            src={screenshots[idx].src}
-            alt={screenshots[idx].caption}
-            className="max-h-full max-w-full object-contain"
-          />
+      {/* Image — fills remaining space */}
+      <div
+        className="relative flex-1 flex items-center justify-center min-h-0 px-16"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <img
+          src={screenshots[idx].src}
+          alt={screenshots[idx].caption}
+          className="max-h-full max-w-full object-contain rounded-lg shadow-2xl"
+        />
 
-          {screenshots.length > 1 && (
-            <>
+        {screenshots.length > 1 && (
+          <>
+            <button
+              onClick={prev}
+              className="absolute left-4 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
+            >
+              <ChevronLeft size={22} />
+            </button>
+            <button
+              onClick={next}
+              className="absolute right-4 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
+            >
+              <ChevronRight size={22} />
+            </button>
+          </>
+        )}
+      </div>
+
+      {/* Caption + dots */}
+      <div className="flex-shrink-0 px-8 py-6 text-center" onClick={(e) => e.stopPropagation()}>
+        <p className="text-base text-white/80 leading-relaxed max-w-2xl mx-auto">
+          {screenshots[idx].caption}
+        </p>
+        {screenshots.length > 1 && (
+          <div className="flex justify-center gap-2 mt-4">
+            {screenshots.map((_, i) => (
               <button
-                onClick={prev}
-                className="absolute left-3 p-2 rounded-lg bg-white/80 dark:bg-neutral-900/80 text-neutral-700 dark:text-neutral-300 hover:bg-white dark:hover:bg-neutral-900 transition-colors shadow"
-              >
-                <ChevronLeft size={18} />
-              </button>
-              <button
-                onClick={next}
-                className="absolute right-3 p-2 rounded-lg bg-white/80 dark:bg-neutral-900/80 text-neutral-700 dark:text-neutral-300 hover:bg-white dark:hover:bg-neutral-900 transition-colors shadow"
-              >
-                <ChevronRight size={18} />
-              </button>
-            </>
-          )}
-        </div>
-
-        {/* Caption + dots */}
-        <div className="px-6 py-5">
-          <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-            {screenshots[idx].caption}
-          </p>
-          {screenshots.length > 1 && (
-            <div className="flex gap-1.5 mt-3">
-              {screenshots.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setIdx(i)}
-                  className={`h-1.5 rounded-full transition-all duration-200 ${
-                    i === idx
-                      ? "w-5 bg-neutral-900 dark:bg-neutral-100"
-                      : "w-1.5 bg-neutral-300 dark:bg-neutral-600"
-                  }`}
-                />
-              ))}
-            </div>
-          )}
-        </div>
+                key={i}
+                onClick={() => setIdx(i)}
+                className={`h-1.5 rounded-full transition-all duration-200 ${
+                  i === idx ? "w-6 bg-white" : "w-1.5 bg-white/30 hover:bg-white/50"
+                }`}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
